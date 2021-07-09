@@ -1,12 +1,11 @@
 # factorial-digits
 This program focuses on the implementation of a python file in docker. The python file uses a integer input and returns the sum of the digits of the factorial of the input variable.
 
-The requiered files to build the docker image is the Main.py, requirements.txt in Dockerfile. These can be found in the daniel_du_toit.tar.gz file. To create the image use the following commands  
-for Windows:
+The requiered files to build the docker image is the Main.py, requirements.txt in Dockerfile. These can be found in the daniel_du_toit.tar.gz file. To create the image use the following commands for Windows:
 ```
 docker build -t "factorial-digits" .
 ```
-for Linux:
+or for Linux:
 ```
 docker build -t 'factorial-digits' .
 ```
