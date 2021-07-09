@@ -3,7 +3,9 @@ This program focuses on the implementation of a python file in docker. The pytho
 
 The requiered files to build the docker image is the Main.py, requirements.txt in Dockerfile. These can be found in the daniel_du_toit.tar.gz file. To create the image use the following commands:
 For Windows
+'''
 $docker build -t "factorial-digits" .
+'''
 For Linux
 $docker build -t 'factorial-digits' .
 
