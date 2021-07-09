@@ -1,5 +1,6 @@
-#This program finds the sum of the indevidual digits of the factorial
+#This program finds the sum of the individual digits of the factorial
 #of the input variable
+#=============================================================================
 import numpy as np
 import argparse
 
@@ -14,6 +15,7 @@ input_num = args.num
 factorial = np.math.factorial(input_num)
 
 #calculating the sum of the digits of the variable factorial
+#this method is used due to not being able to cast variables
 result = 0
 while fact > 0:
     remainder = factorial % 10
