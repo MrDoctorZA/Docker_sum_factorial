@@ -1,6 +1,5 @@
 FROM python:3.8-slim-buster
 
-
 #Make directory for application
 WORKDIR /app
 
@@ -11,5 +10,5 @@ RUN pip install -r requirements.txt
 #Copy source code
 COPY . .
 
-#CMD ["python", "Main.py"]
+#Running pyhton file, use ENTRYPOINT over CMD in order to parse integer
 ENTRYPOINT ["python", "Main.py"]
