@@ -15,11 +15,17 @@ input_num = args.num
 factorial = np.math.factorial(input_num)
 
 #calculating the sum of the digits of the variable factorial
-#this method is used due to not being able to cast variables
-result = 0
-while factorial > 0:
-    remainder = factorial % 10
-    result = result + remainder
-    factorial = factorial//10       #the // is used avoid overflow error
+digits = np.array([int(i) for i in str(factorial)])
+result = np.sum(digits)
+
+#=============================================================================
+#This code was used but excluded to use numpy
+#implementing this method with numpy creates overflow errors with float64
+#result = 0
+#while factorial > 0:
+#    remainder = factorial % 10
+#    result = result + remainder
+#    factorial = factorial//10       #the // is used avoid overflow error
+#=============================================================================
 
 print(result)
