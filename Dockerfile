@@ -1,3 +1,5 @@
+#This Dockerfile allows the creation of the docker image
+#=============================================================================
 FROM python:3.8-slim-buster
 
 #Make directory for application
