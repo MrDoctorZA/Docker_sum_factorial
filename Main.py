@@ -14,13 +14,13 @@ input_num = args.num
 #finding the factorial of variable input_num
 factorial = np.math.factorial(input_num)
 
-#calculating the sum of the digits of the variable factorial
+#seporating digits of factorial into array and calculating the sum
 digits = np.array([int(i) for i in str(factorial)])
 result = np.sum(digits)
 
 #=============================================================================
-#This code was used but excluded to use numpy
-#implementing this method with numpy creates overflow errors with float64
+#This code was used but excluded to use only numpy operations
+#Implementing this method with numpy creates overflow errors with float64
 #result = 0
 #while factorial > 0:
 #    remainder = factorial % 10
@@ -28,4 +28,5 @@ result = np.sum(digits)
 #    factorial = factorial//10       #the // is used avoid overflow error
 #=============================================================================
 
+#the format is changed to match integer output
 print(result)
